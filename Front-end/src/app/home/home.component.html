@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-lg bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white" href="#">Movies</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <form class="d-flex testo">
+        <div class="input-group">
+          <input #keyword class="form-control" type="text" placeholder="Recherche par mot cle" aria-label="Search">
+          <div class="input-group-append">
+            <button (click)="searchMovie(keyword.value)" class=" btn btn btn-warning" type="submit">Search</button>
+          </div>
+        </div>
+      </form>
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item" style="margin-right: 50px;" >
+          <a class="nav-link active text-white" aria-current="page" href="#" >Home</a>
+        </li>
+        <li class="nav-item" style="margin-right: 50px;" >
+          <a class="nav-link text-white" [routerLink]="['/login']"  >Log here</a>
+        </li>
+        <li class="nav-item" style="margin-right: 50px;" >
+          <a class="nav-link text-white" [routerLink]="['/registration']" >SIGN UP</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <div class="movies">
+     <div *ngFor="let movie of films" class="col-4">
+       <div  *ngIf = "searchQuery === ''|| movie.title.includes(searchQuery)" >
+        <app-film-item [film]="movie" ></app-film-item>
+      
+      </div>
+    </div>
+    
+  </div>
+  <div class="container mt-5">
+    <h2 class="mb-3">Commentaires</h2>
+  
+    <!-- Form for adding comments -->
+    <form  >
+      <div class="input-group mb-3">
+        <input type="text" class="form-control input-space" placeholder="Share your experience..."   name="newCommentText" required>
+        <div class="input-group-append">
+          <button class=" btn btn-warning btn-yellow" type="submit">Add Comment</button>
+        </div>
+      </div>
+    </form>
+  </div>

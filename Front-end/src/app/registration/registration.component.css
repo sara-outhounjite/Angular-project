@@ -1,0 +1,83 @@
+
+   .image{
+        background-image: url("https://media.istockphoto.com/id/1408422261/photo/authentic-couple-spending-time-at-home-sitting-on-a-couch-and-watching-latest-blockbuster-on.jpg?s=2048x2048&w=is&k=20&c=1LClTl05KP1MZTihZoZTwNRRlPNBGB8d3GeoXhH3LZo=");
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: #FFD700;
+      font-family: Arial, sans-serif;
+      height:100vh;
+      object-fit: cover; 
+      padding: 0;
+      display: block;
+      margin: 0 auto; 
+      filter: blur(8px);
+    }
+  .form-container {
+    
+    position: absolute;
+    top: -90px; /* Adjust the top position as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  background-color: rgba(0, 0, 0, 0.7);
+ width: 500px;
+ margin-top: 250px;
+  border-radius: 10px;
+  height: 500px;
+  margin-left: 300px;
+}
+form{
+    margin-top: 100px;
+}
+    .form-group {
+      margin-bottom: 1.5rem;
+      margin-left: 30px;
+    }
+    .form-group input {
+      background-color: #282828;
+      color: #FFD700;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      width:400px;
+    }
+    .form-group input::placeholder {
+      color: #888;
+    }
+    .btn-info {
+      background-color: #FFD700;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .btn-info:hover {
+      background-color: #b8860b;
+    }
+    .label-space{
+      margin-bottom:10px;
+      color:#ffff;
+      margin-left: 20px;
+    }
+    .input{
+      margin-left: 20px;
+    }
+.sign{
+  margin-left: 100px;
+}
+.text-muted {
+  color: white !important;
+  margin-left: 20px;
+}
+.signup-message{
+  position: absolute;
+  top: 200px; /* Adjust the top position as needed */
+  left: 20%;
+  transform: translateX(-50%);
+  z-index: 1;
+ margin-left: 0px;
+ font-size: 25px;
+ color: #ffff;
+}
