@@ -1,0 +1,13 @@
+
+    <div class="movie" (click)="godetail()" >
+        <div class="image">
+            <img [src]="'https://image.tmdb.org/t/p/original/' + film.backdrop_path" >
+        </div>
+        <div class="info">
+            <p [innerText]="film.title"></p>
+            <p>ID: {{ film.id }}</p>
+            
+        </div>
+    </div>
+       
+      

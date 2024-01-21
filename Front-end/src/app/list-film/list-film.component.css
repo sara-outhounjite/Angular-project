@@ -1,0 +1,32 @@
+
+.movies {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    grid-row-gap: 50px;
+    padding: 40px;
+  background-color:#ffff
+}
+.d-flex.testo input {
+    margin-right: 10px; 
+    width: 400px;/* Adjust the value as needed for your desired space */
+}
+.welcome-text {
+    font-size: 1.5em;
+    color:#ffff;
+    text-align: center;
+    margin-top: 20px;
+    background-color:black;
+  }
+ 
+  body {
+    background-color:#fff;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar, .welcome-text, .movies {
+    margin: 0;
+  }
+  
+
+/* Optional: You can also use padding on the button for additional spacing */
